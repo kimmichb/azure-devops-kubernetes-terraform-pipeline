@@ -30,9 +30,5 @@ steps:
     command: 'plan'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
-    backendServiceArm: 'azure-resource-manager-service-connection'
-    backendAzureRmResourceGroupName: 'tfstate-tfdemo-rg'
-    backendAzureRmStorageAccountName: 'tfstatedemostgbk'
-    backendAzureRmContainerName: 'tfstate'
-    backendAzureRmKey: 'kubernetes-dev.tfstate'
+    environmentServiceNameAzureRM: 'azure-resource-manager-service-connection'
 
