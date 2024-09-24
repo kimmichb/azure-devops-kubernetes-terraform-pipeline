@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo terraform azure!
+  displayName: 'Run a one-line script'
+
+
